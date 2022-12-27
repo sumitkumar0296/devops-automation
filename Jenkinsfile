@@ -1,8 +1,5 @@
-pipeline {
-    agent any
-    tools{
-        maven 'maven_3_0_5'
-    }
+node('') {
+
     stages{
         stage('Build Maven'){
             steps{
